@@ -1,0 +1,9 @@
+curl \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"username": "fmarcon", "password": "xxx"}' \
+  http://localhost:8000/api/token/
+
+curl \
+  -H "Authorization: Bearer <retorno>" \
+  http://localhost:8000/users/
